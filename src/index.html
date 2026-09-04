@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Harsha Gangolli</title>
+    <meta name="description"
+        content="Harsha Gangolli - Android developer, backend engineer, and Linux self-hoster building reliable products.">
+    <meta name="theme-color" content="#070b12">
+    <meta name="color-scheme" content="dark">
+    <meta property="og:title" content="Harsha Gangolli">
+    <meta property="og:description" content="Android developer, backend engineer, and Linux self-hoster.">
+    <meta property="og:type" content="website">
+    <meta name="author" content="Harsha Gangolli">
+    <link rel="icon" type="image/svg+xml" href="./logo.svg">
+    <link rel="icon" href="./favicon.ico" sizes="48x48">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        document.documentElement.classList.add("js");
+        if (history.scrollRestoration && !location.hash) history.scrollRestoration = "manual";
+    </script>
+</head>
+
+<body>
+    <div id="boot" class="boot" aria-hidden="true">
+        <div class="boot-inner">
+            <div class="boot-logo">hgangolli<span>.</span></div>
+            <div class="boot-bar"><i></i></div>
+            <div class="boot-txt" id="bootTxt">booting</div>
+        </div>
+    </div>
+
+    <div class="scroll-bar" id="scrollBar"></div>
+    <div class="aurora" aria-hidden="true"><i></i><i></i></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursorRing" aria-hidden="true"><span id="cursorLabel"></span></div>
+    <div id="blob"></div>
+
+    <nav id="nav">
+        <div class="inner">
+            <a class="logo" href="#" data-text="hgangolli">hgangolli<span>.</span></a>
+            <button id="menuBtn" class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#cv">CV</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero wrap">
+        <div class="particles" id="particles" aria-hidden="true"></div>
+        <div class="grid">
+            <div class="hero-copy fade">
+                <div class="badge"><span class="pulse"></span>$ whoami</div>
+                <h1 class="hero-title">
+                    <span class="line"><span class="w">I'm</span></span>
+                    <span class="line"><span class="w grad">Harsha</span> <span class="w">Gangolli.</span></span>
+                </h1>
+                <p class="role-line"><span class="prompt">&gt;</span><span id="roles"></span><b class="caret"></b></p>
+                <p class="hero-desc">I build native Android apps, design the backend services behind them, and run the
+                    Linux infrastructure it all lives on. Self-hosting the rest of my stack.
+                    Currently working on Android Automotive at Harman International.
+                </p>
+                <div class="buttons">
+                    <a class="btn pri magnet" href="#projects"><span>Explore Projects</span></a>
+                    <a class="btn sec magnet" href="#contact"><span>Get in Touch</span></a>
+                </div>
+            </div>
+            <div class="term-wrap fade">
+                <div class="term">
+                    <div class="bar">
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        <span class="bar-title">harsha@hgangolli: ~</span>
+                    </div>
+                    <pre id="termText">$ whoami
+Harsha Gangolli
+
+$ tech-stack
+Java
+Kotlin
+Android
+Node.js
+PostgreSQL
+Docker
+Linux
+Nginx
+WireGuard
+Cloudflare
+
+$ status
+Building Something...</pre>
+                </div>
+            </div>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to about"><span></span></a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Android</span><i>◆</i><span>Kotlin</span><i>◆</i><span>Java</span><i>◆</i><span>C++</span><i>◆</i>
+            <span>Node.js</span><i>◆</i><span>PostgreSQL</span><i>◆</i><span>Docker</span><i>◆</i><span>Linux</span><i>◆</i>
+            <span>Nginx</span><i>◆</i><span>WireGuard</span><i>◆</i><span>DNS</span><i>◆</i><span>Self-Hosting</span><i>◆</i>
+        </div>
+    </div>
+
+    <section id="about" class="wrap fade">
+        <h2 class="title" data-num="01">About Me</h2>
+        <div class="timeline">
+            <div class="item">
+                <h3>Engineer</h3>
+                <p>I enjoy building native Android apps, scalable backend services and networking solutions.</p>
+            </div>
+            <div class="item">
+                <h3>Self Hoster</h3>
+                <p>I run my own infrastructure using Docker, reverse proxies, WireGuard VPN, TURN servers and cloud
+                    VPS deployments.</p>
+            </div>
+            <div class="item">
+                <h3>Always Learning</h3>
+                <p>I enjoy understanding systems deeply, the workings and everything.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="wrap fade">
+        <h2 class="title" data-num="02">Experience</h2>
+        <div class="cards">
+            <div class="card exp-card">
+                <div class="exp-header">
+                    <div>
+                        <h3>Software Engineer</h3>
+                        <p class="company">Harman International</p>
+                    </div>
+                    <span class="period">Jan 2025 — Present</span>
+                </div>
+                <ul class="exp-list">
+                    <li>Develop and maintain Android Automotive IVI applications for HVAC, including climate,
+                        temperature control, seat ventilation, and massage functionality.</li>
+                    <li>Integrate new features and carline-specific customizations for Drive Modes, HVAC, and Seats
+                        across HMI and middleware layers.</li>
+                    <li>Contribute to input device handling by maintaining Hardkey and Command Manager functionality for
+                        key event handling.</li>
+                    <li>Validate feature integration and functionality using CAN tools such as PCAN and Vector CANoe,
+                        supporting diagnostics through AIDL-based Inter-Domain Communication between Android and
+                        Integrity OS.</li>
+                    <li>Resolve defects, enhance existing functionality, and improve the stability and maintainability
+                        of production IVI applications.</li>
+                </ul>
+                <div class="chips">
+                    <span>Android Automotive</span>
+                    <span>Java / Kotlin</span>
+                    <span>C++</span>
+                    <span>AIDL</span>
+                    <span>Vector CANoe</span>
+                    <span>PCAN</span>
+                </div>
+            </div>
+
+            <div class="card exp-card">
+                <div class="exp-header">
+                    <div>
+                        <h3>Software Developer Intern</h3>
+                        <p class="company">EGDK India Pvt. Ltd.</p>
+                    </div>
+                    <span class="period">Aug 2024 — Nov 2024</span>
+                </div>
+                <ul class="exp-list">
+                    <li>Developed APIs and automated data workflows to integrate internal tool with Salesforce.</li>
+                </ul>
+                <div class="chips">
+                    <span>Backend</span>
+                    <span>API Development</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="wrap fade">
+        <h2 class="title" data-num="03">Skills</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Languages</h3>
+                <div class="chips">
+                    <span>Java</span><span>Kotlin</span><span>C++</span><span>TypeScript</span><span>Python</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Backend</h3>
+                <div class="chips"><span>Node.js</span><span>Express</span><span>REST</span><span>Socket.IO</span><span>PostgreSQL</span><span>JWT</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Infrastructure</h3>
+                <div class="chips">
+                    <span>Linux</span><span>Docker</span><span>Nginx</span><span>Cloudflare</span><span>WireGuard</span><span>DNS</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Android</h3>
+                <div class="chips">
+                    <span>Android Automotive</span><span>MVVM</span><span>Jetpack</span><span>Coroutines</span><span>WebRTC</span><span>Gradle</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="wrap fade">
+        <h2 class="title" data-num="04">Projects</h2>
+        <div class="cards">
+            <a class="card project" href="https://github.com/Harshagangolli/PingMe_Releases" target="_blank"
+                rel="noopener noreferrer" data-cursor="Open ↗">
+                <h3>PingMe <span class="arrow">↗</span></h3>
+                <p>Self-hosted messaging platform for Android, built on MVVM. Real-time chat over Socket.IO, resumable
+                    chunked media uploads, and peer-to-peer voice and video calling over WebRTC backed by a self-hosted
+                    TURN relay.</p>
+                <div class="chips"><span>Android</span><span>MVVM</span><span>WebRTC</span><span>Socket.IO</span><span>TURN</span><span>PostgreSQL</span>
+                </div>
+            </a>
+
+            <div class="card project">
+                <h3>Home Infrastructure</h3>
+                <p>Self-hosted personal cloud running on Linux — containerised services behind an Nginx reverse proxy,
+                    WireGuard for remote access, managed DNS with automated TLS, and the TURN relay powering PingMe's
+                    calling.</p>
+                <div class="chips"><span>Docker</span><span>Nginx</span><span>WireGuard</span><span>TURN</span><span>Cloudflare</span>
+                </div>
+            </div>
+            <div class="card project">
+                <h3>Android Engineering</h3>
+                <p>Native Android development centred on MVVM, Jetpack components and lifecycle-aware, testable UI
+                    layers — spanning consumer applications and Automotive IVI systems.</p>
+                <div class="chips"><span>Kotlin</span><span>MVVM</span><span>Jetpack</span><span>Coroutines</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv" class="wrap fade">
+        <h2 class="title" data-num="05">Resume</h2>
+        <div class="card cv-card">
+            <div class="cv-info">
+                <h3>Harsha D Gangolli — CV</h3>
+                <p>Software Engineer specializing in Android Automotive IVI, middleware, and self-hosted cloud
+                    infrastructure.</p>
+                <div class="cv-actions">
+                    <a class="btn pri magnet" href="./Harsha_Gangolli_Resume.pdf" target="_blank" rel="noopener"
+                        data-cursor="View ↗">
+                        <span>View Full Screen</span>
+                    </a>
+                    <a class="btn sec magnet" href="./Harsha_Gangolli_Resume.pdf"
+                        download="Harsha_Gangolli_Resume.pdf" data-cursor="Download ↓">
+                        <span>Download PDF</span>
+                    </a>
+                </div>
+            </div>
+            <div class="cv-frame-container">
+                <iframe src="./Harsha_Gangolli_Resume.pdf" title="Harsha Gangolli CV Preview"
+                    loading="lazy"></iframe>
+                <p class="cv-fallback">Inline preview isn't supported on this browser — use
+                    <a href="./Harsha_Gangolli_Resume.pdf" target="_blank" rel="noopener">View Full Screen</a>
+                    or <a href="./Harsha_Gangolli_Resume.pdf"
+                        download="Harsha_Gangolli_Resume.pdf">Download PDF</a> instead.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="wrap fade">
+        <h2 class="title" data-num="06">Let's Build Something?</h2>
+        <div class="card contact-card">
+            <div class="contact-item">
+                <p>Email</p>
+                <h3><a class="contact-link" href="mailto:harsha@hgangolli.com">harsha@hgangolli.com</a></h3>
+                <button class="copy-btn" id="copyEmail" data-copy="harsha@hgangolli.com"
+                    aria-label="Copy email address">Copy</button>
+            </div>
+            <div class="contact-item">
+                <p>LinkedIn</p>
+                <h3><a class="contact-link" href="https://www.linkedin.com/in/harsha-g-355a90250"
+                        target="_blank" rel="noopener noreferrer" data-cursor="Open ↗">in/harsha-gangolli</a></h3>
+            </div>
+            <div class="contact-item">
+                <p>GitHub</p>
+                <h3><a class="contact-link" href="https://github.com/HarshaGangolli" target="_blank"
+                        rel="noopener noreferrer" data-cursor="Open ↗">github.com/HarshaGangolli</a></h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>Harsha Gangolli © 2026</div>
+        <div class="footer-meta"><span class="live-dot"></span>Bengaluru, IN — <span id="clock">--:--:--</span></div>
+        <a href="#" class="back-to-top">↑ Back to Top</a>
+    </footer>
+
+    <a href="#" class="fab" id="fab" aria-label="Back to top">
+        <svg class="fab-ring" viewBox="0 0 44 44" aria-hidden="true">
+            <circle class="fab-track" cx="22" cy="22" r="19" />
+            <circle class="fab-fill" id="fabFill" cx="22" cy="22" r="19" />
+        </svg>
+        <span class="fab-arrow">↑</span>
+    </a>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
